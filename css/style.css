@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main_page {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(60deg, white, yellow, rgb(47, 153, 47), white);
+}
+
+.inner {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+.logo {
+    width: 0px;
+    line-height: 40px;
+}
+
+nav > ul {
+    float: right;
+}
+nav > ul > li {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 70px;
+    list-style: none;
+}
+nav > ul li ul li {
+    width: 100%;
+    text-align: left;
+}
+nav ul li:hover {
+    cursor: pointer;
+    position: relative;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li:hover > a {
+    color: white;
+}
+nav > ul > li > a {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+}
+nav > ul > li {
+    float: left;
+}
+nav a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+nav > ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 2000;
+}
+nav > ul li ul li > a {
+    text-decoration: none;
+}
+[type="checkbox"],
+label {
+    display: none;
+    z-index: 10000;;
+}
+@media screen and (max-width: 1029px) {
+    nav ul {
+        display: none;
+    }
+    label {
+        display: block;
+        background: #222;
+        width: 50px;
+        height: 45px;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+    label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: white;
+        margin: 9px 10px;
+        box-shadow: 0px 10px 0px white, 0px 20px 0px white
+    }
+    [type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 30px;
+        left: 20px;
+        top: 0;
+        /* opacity: 0.8; */
+    }
+    nav a {
+        color: white;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        background: #222;
+        text-indent: 20px;
+    }
+    nav > ul > li {
+        margin-left: 0px;
+    }
+    nav > ul li ul li {
+        display: block;
+        float: none;
+    }
+    nav > ul li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+        float: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.mind_activism {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left:0
+}
+
+.welcome_container {
+    height: 250px;
+    width: 400px;
+    background-color: rgb(47, 153, 47);
+    background-image: url(../Image/Welcome.png);
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    font-size: 2rem;
+    border: 4px solid rgb(31, 193, 27);
+    animation: welcomePosition 3s;
+    animation-fill-mode: forwards;
+}
+
+.close {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover {
+    transform: scale(1.1);
+}
+
+.wallpaper {
+    width: 1000px;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.welcomeText {
+    font-size: 0.8rem;
+    margin-top: -2rem;
+    color: brown;
+    font-weight: 600;
+}
+
+.Quote {
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: red;
+}
+
+.signup{
+    animation: signUpColor 3s infinite
+}
+
+.active{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
+.active:hover{
+    color: black;
+}
+
+@keyframes welcomePosition {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes signUpColor{
+    0%{
+        background-color: red;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    50%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+}

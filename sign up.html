@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sign in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Sign In Page</title>
+</head>
+<body>
+  <div class="main_page">
+    <div class="inner">
+        <nav>
+            <a href="#" class="logo"><img src="./Image/Mind Activism_Logo.png" class="mind_activism"></a>
+            <input type="checkbox" id="nav" /><label for="nav"></label>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info"></i> About</a></li>
+                <li><a href="sign up.html" class="active"><i class="fas fa-user-plus"></i> Sign Up</a></li>                    
+                <li><a href="sign in.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="inactive underlineHover"><a href="sign in.html">Sign In</a></h2>
+          <h2 class="active"><a href="#">Sign Up</a></h2>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="./Image/Icon.png" id="icon" alt="User Icon" class="icon"/>
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <input type="text" id="login" class="fadeIn second txtUser" name="login" placeholder="username">
+            <input type="text" id="password" class="fadeIn third txtPassword" name="login" placeholder="password">
+            <input type="submit" class="fadeIn fourth submit" value="Sign Up">
+          </form>
+      
+      
+        </div>
+      </div>
+
+      <script src="./js/sign up.js"></script>
+</body>
+</html>

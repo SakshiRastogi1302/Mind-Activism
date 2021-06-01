@@ -9,3 +9,8 @@ closeWelcomeContainer.addEventListener("click",function(){
     wallpaperImage.setAttribute("src","./Image/new wallpaper.png");
     parentElement.style.display="none";
 });
+
+
+function JSalert(){
+	swal("Please fill the form before visiting the website \n\n\n Form option is present in the top right corner. ");
+}
